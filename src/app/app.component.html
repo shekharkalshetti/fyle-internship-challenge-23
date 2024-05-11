@@ -81,39 +81,10 @@
   </div>
 
   <!-- Repository List -->
-  <div *ngIf="repos.length > 0" class="mt-5 grid grid-cols-2 gap-4">
-    <div *ngFor="let repo of repos">
-      <ng-container *ngIf="!loading; else loadingSkeleton">
-        <div
-          class="border border-gray-300 rounded min-h-[200px] p-5"
-          *ngIf="repo"
-        >
-          <h1 class="text-3xl mb-2">{{ repo.name }}</h1>
-          <p class="text-lg mb-5">
-            {{ repo.description || "No description provided" }}
-          </p>
-          <div class="flex flex-wrap" *ngIf="repo.topics.length > 0">
-            <span
-              *ngFor="let topic of repo.topics"
-              class="bg-blue-600 mb-1 mr-2 px-2 py-1 rounded-md text-white"
-              >{{ topic }}</span
-            >
-          </div>
-        </div>
-      </ng-container>
-
-      <ng-template #loadingSkeleton>
-        <div class="bg-gray-100 p-4 mb-8 rounded shadow-md">
-          <div class="animate-pulse">
-            <div class="h-6 bg-gray-300 rounded mb-2"></div>
-            <div class="h-4 bg-gray-300 rounded mb-2"></div>
-            <div class="h-4 bg-gray-300 rounded w-3/4"></div>
-            <div class="h-4 bg-gray-300 rounded w-1/2"></div>
-          </div>
-        </div>
-      </ng-template>
-    </div>
-  </div>
+  <app-repository-list
+    *ngIf="repos.length > 0"
+    [repositories]="repos"
+  ></app-repository-list>
 
   <!-- Pagination -->
   <div

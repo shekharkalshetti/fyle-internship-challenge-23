@@ -7,9 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { RepositoryListComponent } from './components/repository-list/repository-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RepositoryListComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

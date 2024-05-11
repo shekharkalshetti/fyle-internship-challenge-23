@@ -1,0 +1,17 @@
+<div class="mt-5 grid grid-cols-2 gap-4">
+  <ng-container *ngFor="let repo of repositories">
+    <div class="border border-gray-300 rounded min-h-[200px] p-5">
+      <h1 class="text-3xl mb-2">{{ repo.name }}</h1>
+      <p class="text-lg mb-5">
+        {{ repo.description || "No description provided" }}
+      </p>
+      <div *ngIf="repo.topics.length > 0" class="flex flex-wrap">
+        <span
+          *ngFor="let topic of repo.topics"
+          class="bg-blue-600 mb-1 mr-2 px-2 py-1 rounded-md text-white"
+          >{{ topic }}</span
+        >
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ApiService } from './services/api.service';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
