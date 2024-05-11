@@ -1,43 +1,65 @@
-# Fyle Frontend Challenge
+# GitHub Repository Viewer
 
-## Who is this for?
+GitHub Repository Viewer is a web application built with Angular that allows users to search for GitHub users and view their repositories.
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+## Introduction
 
-## Why work at Fyle?
+GitHub Repository Viewer provides an intuitive interface for searching GitHub users and browsing their repositories. It leverages the GitHub REST API to fetch user information and repository data in real-time, providing users with up-to-date information about their favorite GitHub users and projects.
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+## Features
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
-
-## Challenge outline
-
-This challenge involves implementing application using github api. 
-
-The services that you need to use are already implemented - check out ApiService.
-
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
-
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
-
-## What happens next?
-
-You will hear back within 48 hours from us via email.
+- Search for GitHub users by username
+- View detailed information about a user, including their avatar, bio, location, and Twitter handle
+- Browse a user's repositories, including details such as repository name, description, and language
+- Pagination support for navigating through large lists of repositories
 
 ## Installation
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+To run the GitHub Repository Viewer locally, follow these steps:
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+1. Clone the repository:
 
-## Development server
+   ```bash
+   git clone https://github.com/shekharkalshetti/fyle-internship-challenge-23.git
+   ```
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+2. Navigate to the project directory:
 
-## Further help
+   ```bash
+   cd fyle-internship-challenge-23
+   ```
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   ng serve
+   ```
+
+5. Open your browser and visit [http://localhost:4200](http://localhost:4200) to view the application.
+
+## Usage
+
+1. Enter a GitHub username into the search bar and click "Search Repositories".
+2. View the user's profile information, including their avatar, bio, location, and Twitter handle.
+3. Browse the user's repositories by scrolling through the list or using pagination controls.
+4. Click on a repository to view more details, such as the repository name, description, language, and links to the repository on GitHub.
+
+## Contributing
+
+Contributions to GitHub Repository Viewer are welcome! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request, describing your changes in detail and explaining why they are needed.
+
+## Deployment
+
+GitHub Repository Viewer is deployed on [Vercel](https://github-user-repo-finder.vercel.app/). You can access the live application [here](https://github-user-repo-finder.vercel.app/).
